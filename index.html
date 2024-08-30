@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+  </head>
+  <body>
+    <nav id="desktop-nav">
+      <div class="logo">Michael Regan</div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <nav id="hamburger-nav">
+      <div class="logo">Michael Regan</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        </div>
+      </div>
+    </nav>
+    <section id="profile">
+      <div class="section__pic-container">
+        <img src="./assets/profile-pic2.JPG" alt="Michael Regan profile picture" />
+      </div>
+      <div class="section__text">
+        <p class="section__text__p1">Hello, I'm</p>
+        <h1 class="title">Michael Regan</h1>
+        <p class="section__text__p2">Computer Science, University of Virginia</p>
+        <div id="socials-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="My LinkedIn profile"
+            class="icon"
+            onclick="location.href='https://www.linkedin.com/in/michael-regan-908796219/'"
+          />
+          <img
+            src="./assets/github.png"
+            alt="My Github profile"
+            class="icon"
+            onclick="location.href='https://github.com/michaelpregan'"
+          />
+        </div>
+      </div>
+    </section>
+    <section id="about">
+      <p class="section__text__p1">Get To Know More</p>
+      <h1 class="title">About Me</h1>
+      <div class="section-container">
+        <div class="section__pic-container">
+          <img
+            src="./assets/profile-pic.JPG"
+            alt="Profile picture"
+            class="about-pic"
+          />
+        </div>
+        <div class="about-details-container">
+          <div class="about-containers">
+            <div class="details-container">
+              <img
+                src="./assets/education.png"
+                alt="Education icon"
+                class="icon"
+              />
+              <h3>Education</h3>
+              <p>University of Virginia<br />Major: Computer Science<br />Minor: Spanish<br />Expected Graduation: May 2026</p>
+            </div>
+          </div>
+          <div class="text-container">
+            <p>
+                I'm from Northern Virginia but am abroad in Valencia, Spain for the Fall 2024 semester! 
+                I am passionate about connecting with others and using technology to enact change.
+                I like to stay active, read, play chess, and am learning to play the piano.
+                I'm currently looking for internships positions for the summer of 2025.
+            </p>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#experience'"
+      />
+    </section>
+    <section id="experience">
+      <p class="section__text__p1">Explore My</p>
+      <h1 class="title">Experience</h1>
+      <div class="experience-details-container">
+        <div class="details-container">
+            <h2 class="experience-sub-title">Work Experience</h2>
+            <div class="title-date-container">
+                <h3 class="company-title">Tech Intern - Spry Methods, Inc.</h3>
+                <div class="date-location-container">
+                    <p class="job-date">May 2024 – August 2024</p>
+                    <p class="job-location">McLean, Virginia</p>
+                </div>
+                <h3 class="company-title">Data Engineer Intern - Falling Fruit</h3>
+                <div class="date-location-container">
+                    <p class="job-date">May 2023 – August 2023</p>
+                    <p class="job-location">Remote</p>
+                </div>
+                <h3 class="company-title">Research Intern - George Mason University</h3>
+                <div class="date-location-container">
+                    <p class="job-date">June 2021 – January 2022</p>
+                    <p class="job-location">Remote</p>
+                </div>
+                <h3 class="company-title">Research Intern - Rakuten Intelligence</h3>
+                <div class="date-location-container">
+                    <p class="job-date">June 2020 – August 2020</p>
+                    <p class="job-location">Remote</p>
+                </div> 
+            </div>   
+            <h2 class="experience-sub-title">University Experience</h2>
+            <div class="title-date-container">
+                <h3 class="company-title">Teaching Assistant (CS 2100) - University of Virginia</h3>
+                <div class="date-location-container">
+                    <p class="job-date">January 2024 – Present</p>
+                    <p class="job-location">Charlottesville, Virginia</p>
+                </div>
+                <h3 class="company-title">Event Manager - Google Developer Student Club</h3>
+                <div class="date-location-container">
+                    <p class="job-date">September 2023 – Present</p>
+                    <p class="job-location">Charlottesville, Virginia</p>
+                </div> 
+            </div>   
+        </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#projects'"
+      />
+    </section>
+    <section id="projects">
+      <p class="section__text__p1">Browse My Recent</p>
+      <h1 class="title">Projects</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/poeltl.jpg"
+                alt="Project 1"
+                class="project-img"
+                style="width:auto;height:200px;"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Poeltl Solver</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/michaelpregan/poeltl-solver'"
+              >
+                Github
+              </button>
+            </div>
+            <div class="text-container">Solving Poeltl, like Wordle but the NBA.</div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/Emissions.jpg"
+                alt="Project 2"
+                class="project-img"
+                style="width:auto;height:200px;"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Research Paper</h2>
+            <div class="btn-container">
+                <button
+                class="btn btn-color-2 project-btn"
+                onclick="window.open('./assets/research.pdf')"
+              >
+                Download
+              </button>
+            </div>
+            <div class="text-container">Development of Hazardous Air Pollutant Emissions Estimates from 1990 to 2010 Based on Historical Data.</div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/site.png"
+                alt="Project 3"
+                class="project-img"
+                style="width:auto;height:200px;"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">This Website</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/michaelpregan/my-portfolio'"
+              >
+                Github
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#contact'"
+      />
+    </section>
+    <section id="contact">
+      <p class="section__text__p1">Get in Touch</p>
+      <h1 class="title">Contact Me</h1>
+      <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+          <img
+            src="./assets/email.png"
+            alt="Email icon"
+            class="icon contact-icon email-icon"
+          />
+          <p><a href="mailto:michaelpregan.8@gmail.com">michaelpregan.8@gmail.com</a></p>
+        </div>
+        <div class="contact-info-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="LinkedIn icon"
+            class="icon contact-icon"
+          />
+          <p><a href="https://www.linkedin.com/in/michael-regan-908796219/">LinkedIn</a></p>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <nav>
+        <div class="nav-links-container">
+          <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
